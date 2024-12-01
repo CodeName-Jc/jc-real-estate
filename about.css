@@ -1,0 +1,770 @@
+
+
+/*About Us*/
+.about-us{
+    background-image: linear-gradient(rgba(104,102,95), rgba(242, 242, 242, 0.950));
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    flex-wrap: wrap;
+}
+.aboutus-container{
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    margin-top: 120px;
+    padding: none;
+}
+.reverse_column{
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    margin: none;
+    padding: none;
+}
+.about-detail{
+    text-align: justify;
+    font-size: 18px;
+    width: 50%;
+}
+.about-detail h1{
+    font-family: "Reggae One", serif;
+}
+#about-logo{
+    border-radius: 100%;
+    height: 350px;
+    width: 350px;
+    position: relative;
+    top: -30px;
+}
+.aboutus-logo{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.why-info{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: nowrap;
+    flex-direction: row;
+    gap: 20px;
+}
+.why-details{
+    text-align: center;
+    width: 260px;
+    height: 320px;
+
+    background-color: rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    border-radius: 15px;
+    border: 2px solid rgba(255, 255, 255, 0.5);
+}
+#prove-logo, #excellent-logo, #customized-logo{
+    height: 100px;
+    width: 100px;
+}
+#why-choose, .why-details h5, .why-details p{
+    color: #595852;
+}
+
+@media (max-width: 800px){
+    .about-us{
+        width: 100%;
+        overflow: hidden;
+    }
+    .reverse_column{
+        justify-content: center;
+        align-items: center;
+        flex-direction: column-reverse;
+        margin: none;
+    }
+    #why-choose{
+        font-size: 12px;
+    }
+    .about-detail, .why-details{
+        font-size: 10px;
+    }
+    .about-detail{
+        width: 70%;
+    }
+    .aboutus-container{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin: auto;
+    }
+    #about-logo{
+        height: 200px;
+        width: 200px;
+    }
+    .why-container{
+        width: 70%;
+    }
+    .why-info{
+        gap: 10px;
+        font-size: 10px;
+    }
+    .why-details{
+        width: 150px;
+        height: 180px;
+        padding: 10px;
+    }
+    .details{
+        font-size: 10px;
+        text-align: center;
+    }
+    #prove-logo, #excellent-logo, #customized-logo{
+        height: 50px;
+        width: 50px;
+    }
+}
+
+
+
+/*Faq Style*/
+
+.FAQ{
+    background-image: linear-gradient(rgba(104,102,95), rgba(242, 242, 242, 0.950));
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+.faq-container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+.FAQ-Answer{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr;
+    width: 70%;
+    gap: 20px;
+}
+#FAQIMG{
+    height: 70px;
+    position: relative;
+}
+.QuestionIMG{
+    width:50px ;
+    height:50px ;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.FAQ h1{
+    text-align: center;
+    color: #3C3D37;
+    font-size: 30px;
+}
+.FAQ h2, .FAQ p{
+    color: #3C3D37;
+    text-align: justify;
+}
+.bullet{
+    position: relative;
+    top: -12px;
+}
+.question{
+    display: flex;
+    gap: 10px;
+}
+.answer{
+    display: flex;
+    gap: 10px;
+}
+
+@media (max-width: 800px){
+    .FAQ{
+        padding: none;
+        margin: none;
+    }
+    .FAQ-Answer{
+        justify-content: center;
+        align-items: center;
+        width: 90%;
+        height: 30%;
+    }
+    .FAQ h1{
+        font-size: 18px;
+    }
+    .FAQ h2, .FAQ p{
+        font-size: 10px;
+        text-align: justify;
+    }
+    .QuestionIMG{
+        width:30px ;
+        height:30px ;
+    }
+}
+
+
+
+/*Inquire Now Style*/
+.inquire-now-display{
+    background-image: linear-gradient(rgba(104,102,95), rgba(242, 242, 242, 0.950));
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    flex-wrap: wrap;
+}
+.inquire-now-display .inquire-container{
+    display: flex;
+    justify-content: center;
+    width: 100%;
+}
+.inquire-now-display .rev-col{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 95%;
+    margin: 50px;
+}
+.inquire-now-display .inquire-box{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 40%;
+}
+.inquire-now-display .inquire-details{
+    background-color: #878585;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    border-radius: 25px;
+    border: 2px solid;
+    width: 85%;
+    height: 600px;
+}
+.inquire-now-display #detail-title{
+    font-size: 40px;
+    margin-bottom: 80px;
+    margin-top: 20px;
+}
+.inquire-now-display .inquire-inputs{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 90%;
+    gap: 30px;
+    margin-bottom: 50px;
+}
+.inquire-now-display #inquire-name, .inquire-now-display #inquire-email, .inquire-now-display #inquire-phone{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+}
+input[type=email], [type=tel], #inname[type=text]{
+    width: 95%;
+    font-size: 35px;
+    border-radius: 10px;
+    border: 1px solid black;
+    color: #595852;
+    background-color: #c0bfbc;
+    text-indent: 10px;
+}
+.inquire-now-display #inquire-btn{
+    border-radius: 50px;
+    background-color: #aaa8a8;
+    width: 210px;
+    height: 65px;
+    font-size: 27px;
+    border-color:#D9D9D9;
+    box-shadow: 0 15px 50px rgba(0,0,0,0.45);
+    cursor: pointer;
+    margin-top: 50px;
+    color: #595852;
+}
+.inquire-now-display #inquire-btn:hover{
+    background-color:#d3cccc;
+}
+
+.inquire-now-display #line{
+    border: 1px solid #595852;
+    height: 95%;
+    margin: 5%;
+}
+.inquire-now-display .policy-details{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 40%;
+}
+.inquire-now-display .policy-logo{
+    display: flex;
+    justify-content:  center;
+    width: 100%;
+}
+.inquire-now-display #policyIMG{
+    border-radius: 100%;
+    width: 300px;
+    height: 300px;
+}
+.inquire-now-display #policy-text{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    font-size: 25px;
+}
+.inquire-now-display #policy-text p, .inquire-now-display #policy-text a{
+    color: #595852;
+}
+.inquire-now-display #policy-text a:active{
+    color: #888888;
+}
+
+@media (max-width: 800px){
+    .inquire-now-display{
+        padding: 0px;
+        margin: 0px;
+    }
+    .inquire-now-display .inquire-container{
+        padding: 10px;
+        margin: 5px;
+    }
+    .inquire-now-display .rev-col{
+        display: flex;
+        flex-direction: column-reverse;
+        justify-content: center;
+        align-items: center;
+        width: 100%;
+        padding: 0px;
+        margin: 0px;
+    }
+    .inquire-now-display .inquire-box{
+        width: 100%;
+    }
+    .inquire-now-display .inquire-details{
+        width: 90%;
+        height: 250px;
+        gap: 10px;
+    }
+    .inquire-now-display #detail-title{
+        font-size: 20px;
+        margin-bottom: 10px;
+    }
+    .inquire-now-display .inquire-inputs{
+        margin: 0px;
+        gap: 10px;
+    }
+    input[type=email], [type=tel], #inname[type=text]{
+        font-size: 16px;
+        border-radius: 5px;
+    }
+    .inquire-now-display #inquire-btn{
+        width: 110px;
+        height: 35px;
+        font-size: 15px;
+        margin-top: 15px;
+    }
+    .inquire-now-display #inquire-btn:hover{
+        background-color:#d3cccc;
+    }
+    .inquire-now-display #line{
+        width: 95%;
+        margin: 10%;
+    }
+    .inquire-now-display #policyIMG{
+        width: 180px;
+        height: 180px;
+    }
+    .inquire-now-display .policy-details{
+        width: 100%;
+    }
+    .inquire-now-display #policy-text{
+        width: 80%;
+    }
+    .inquire-now-display #policy-text p{
+        font-size: 15px;
+    }
+}
+
+
+
+/*Contact Us*/
+
+.Contact-Us{
+    background-image: linear-gradient(rgba(104,102,95), rgba(242, 242, 242, 0.950));
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    flex-wrap: wrap;
+}
+.Contact-Container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 95%;
+    height: 80%;
+}
+.con-column{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 40%;
+    height: 70%;
+}
+.contact-details{
+    text-align: center;
+    width: 90%;
+    height: 40%;
+}
+.contact-details h1{
+    font-size: 40px;
+}
+.contact-details p{
+    font-size: 25px;
+}
+.contact-input{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 90%;
+}
+.input-contact{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    gap: 20px;
+    margin-bottom: 5%;
+}
+.con-name,.con-email,.con-msg{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+}
+#contact-name[type=text],#contact-email[type=text],textarea{
+    width: 100%;
+    font-size: 20px;
+    border-radius: 10px;
+    border: 1px solid black;
+    color: #595852;
+    background-color: #c0bfbc;
+    text-indent: 10px;
+    height: 60px;
+}
+#message{
+    height: 120px;
+}
+.contact-btn{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 95%;
+}
+.Contact-Us  button{    
+    border-radius: 50px;
+    background-color: #aaa8a8;
+    color: #595852;
+    width: 212px;
+    height: 65px;
+    font-size: 27px;
+    border-color:#D9D9D9;
+    box-shadow: 0 15px 50px rgba(0,0,0,0.45);
+    cursor: pointer;
+}
+#con-line{
+    border: 1px solid #595852;
+    margin: 5%;
+    height: 80%;
+}
+.Con-details{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 40%;
+    height: 70%;
+    gap: 35px;
+}
+.phone,.mail,.social{
+    display: flex;
+    width: 90%;
+}
+.phone-detail,.email-detail{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+}
+.phone-detail p, .email-detail p{
+    margin: 10px;
+    color: #30302f;
+    font-size: 25px;
+}
+.phone-detail h1, .email-detail h1{
+    margin: 10px;
+    color: #30302f;
+    text-align: left;
+    font-size: 35px;
+}
+#phone-no,#email-add{
+    text-indent: 30px;
+}
+.social{
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+}
+.social-title{
+    display: flex;
+    width: 100%;
+}
+.social-title p,.social-title h1{
+    color: #30302f;
+    margin: 10px;
+}
+.social-title p{
+    font-size: 25px;
+}
+.social-title h1{
+    font-size: 40px;
+}
+.soc-detail{
+    display: flex;
+    flex-direction: column;
+    font-size: 18px;
+    width: 70%;
+    margin-left: 60px;
+}
+.soc-fb,.soc-ig{
+    display: flex;
+    align-items: center;
+    width: 100%;
+}
+.soc-fb p,.soc-ig p{
+    display: flex;
+    align-items: center;
+    color: #30302f;
+}
+.conimages{
+    width: 60px;
+    height: 60px;
+    margin-right: 20px;
+}
+.socimages{
+    width: 30px;
+    height: 30px;
+    margin-right: 20px;
+}
+
+@media (max-width:800px){
+    .Contact-Us{
+        margin: 0px;
+        padding: 0px;
+    }
+    .Contact-Container{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        width: 100%;
+        padding: 0px;
+        margin: 0px;
+    }
+    .con-column{
+        width: 100%;
+        height: 40%;
+        margin: 5%;
+        margin-bottom: 20px;
+        gap: 20px;
+    }
+    .contact-details{
+        text-align: center;
+        width: 90%;
+    }
+    .contact-details h1{
+        font-size: 18px;
+    }
+    .contact-details p{
+        font-size: 12px;
+    }
+    .contact-input{
+        width: 90%;
+    }
+    .input-contact{
+        width: 100%;
+        margin-bottom: 20px;
+        gap: 10px;
+    }
+    .con-name,.con-email,.con-msg{
+        width: 100%;
+    }
+    #contact-name[type=text],#contact-email[type=text], textarea{
+        width: 100%;
+        font-size: 12px;
+        height: 20px;
+        border-radius: 5px;
+    }
+    #message{
+        height: 60px;
+    }
+    .contact-btn{
+        width: 95%;
+    }
+    .Contact-Us button{    
+        width: 110px;
+        height: 35px;
+        font-size: 15px;
+        margin-bottom: 20px;
+    }
+    #con-line{
+        height: 1px;
+        width: 85%;
+        margin: 5%;
+    }
+    .Con-details{
+        width: 75%;
+        gap: 10px;
+        margin: 5%;
+        margin-top: 20px;
+    }
+    .phone,.mail,.social{
+        display: flex;
+        width: 100%;
+    }
+    .phone-detail,.email-detail{
+        width: 100%;
+    }
+    .phone-detail p, .email-detail p{
+        margin: 10px;
+        color: #30302f;
+        font-size: 13px;
+    }
+    .phone-detail h1, .email-detail h1{
+        margin: 0px;
+        color: #30302f;
+        font-size: 18px;
+    }
+    #phone-no,#email-add{
+        text-indent: 15px;
+    }
+    .social{
+        gap: 0px;
+        margin: 0px;
+        width: 100%;
+    }
+    .social-title{
+        display: flex;
+        width: 100%;
+    }
+    .social-title h1{
+        font-size: 18px;
+    }
+    .soc-detail{
+        display: flex;
+        flex-direction: column;
+        font-size: 13px;
+        width: 100%;
+    }
+    .soc-fb,.soc-ig{
+        width: 100%;
+    }
+    .conimages{
+        width: 30px;
+        height: 30px;
+        margin-right: 20px;
+    }
+    .socimages{
+        width: 15px;
+        height: 15px;
+        margin-left: 40px;
+    }
+}
+
+
+/*Pop-up*/
+.inquire-popup, .contact-popup{
+    width: 400px;
+    background: #595852;
+    border-radius: 6px;
+    position:fixed;
+    top: 0;
+    left: 50%;
+    transform: translate(-50%, -50%) scale(0.1);
+    text-align: center;
+    padding: 0 30px 30px;
+    color: #333;
+    visibility: hidden;
+    transition: transform 0.4s, top 0.4s;
+}
+.inquire-open-popup, .contact-open-popup{
+    visibility: visible;
+    top: 50%;
+    transform: translate(-50%, -50%) scale(1);
+}
+.inquire-popup img, .contact-popup img{
+    width: 150px;
+    margin-top: -50px;
+    border-radius: 50%;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+}
+.inquire-popup h2{
+    font-size: 38px;
+    font-weight: 500;
+    margin: 0 0 20px;
+}
+.contact-popup h2{
+    font-size: 30px;
+    font-weight: 500;
+    margin: 0 0 20px;
+}
+.inquire-popup p, .contact-popup p{
+    font-size: 20px;
+    text-align: center;
+}
+.inquire-popup button, .contact-popup button{
+    width: 100%;
+    margin-top: 50px;
+    padding: 10px 0;
+    background: #30302f;
+    color: white;
+    border: 0;
+    outline: none;
+    font-size: 18px;
+    border-radius: 4px;
+    cursor: pointer;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+    transition: 0.4s;
+}
+.inquire-popup button:hover, .contact-popup button:hover{
+    background-color: #464646;
+}
+
+@media(max-width: 800px){
+    .inquire-popup, .contact-popup{
+        width: 300px;
+        padding: 0 20px 20px;
+    }
+    .inquire-popup h2, .contact-popup h2{
+        font-size: 28px;
+        font-weight: 500;
+        margin: 30px 0 30px;
+    }
+    .inquire-popup p, .contact-popup p{
+        font-size: 14px;
+    }
+    .inquire-popup button, .contact-popup button{
+        border: 0;
+        outline: none;
+        font-size: 15px;
+        border-radius: 4px;
+        cursor: pointer;
+        box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+    }
+}
+/*final css*/

@@ -1,0 +1,244 @@
+body{
+    font-family: "Inter", serif;
+    margin: 0;
+    padding: 0;
+}
+*{
+    box-sizing: border-box;
+    text-decoration: none;
+    padding: 0 ;
+    margin: 0;
+    list-style: none;
+    color: white;
+}
+.home-page{
+    background-image: url(./images/bg.png);
+    height: 100vh;
+    width: 100%;
+    background-size: cover;
+    background-repeat: no-repeat;
+    object-fit: cover;
+    
+}
+
+
+nav{
+    display: flex;
+    position: fixed;
+    justify-content: space-between;
+    align-items: center;
+    text-align: center;
+    padding: 20px 70px;
+    width: 100vw;
+    z-index: 1000;
+    
+}
+.logo a{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.logo img{
+    width: 80px;
+    height: 80px;
+    border-radius: 10px;
+}
+.logo p{
+    font-size: 35px;
+    font-weight: bold;
+    margin-left: 15px;
+    font-family: "Reggae One", serif;
+}
+.menu, .menu ul{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+}
+
+.menu ul li{
+    margin: 0 50px;
+    transition: .5s;
+    
+}
+.menu ul li a{
+    font-size: 25px;
+    padding: 10px 10px;
+    
+}
+
+.menu ul li:hover{
+    transform: translate(0, -5px);
+    opacity: .8;
+}
+.menu ul li:last-child{
+    margin-right: 0;
+    border: 1px solid white;
+    padding: 10px 25px 10px 25px;
+    border-radius: 100px;
+    background-color: rgba(255, 255, 255, 0.33);
+    transition: .5s;
+}
+.menu ul li:last-child:hover{
+    background-color: rgba(255, 255, 255, 0.101);
+}
+.menu svg{
+    width: 35px;
+    height: 35px;
+    fill: white;
+    display: none;
+}
+.content{
+    position: absolute;
+    left: 200px;
+    bottom: 280px;
+
+}
+.content h1{
+    font-size: 5.625em;
+    font-weight: bolder;
+    margin: 0;
+    line-height: 1.2;
+}
+.content p{
+    font-size: 18px;
+    margin: 20px 0;
+    line-height: 1.5;
+    font-family: "Nokora", serif;
+    margin-top: 0;
+    text-indent: 10px;
+
+}
+@media screen and (max-width: 800px){
+    .home-page{
+        background-position: calc(20% - 0px) 0;
+        background-size: cover;
+    }
+    nav{
+        padding: 10px 20px;
+        width: 100%;
+        
+    }
+    .logo img{
+        width: 50px;
+        height: 50px;
+    }
+    .logo p{
+        font-size: 20px;
+    }
+    .content{
+        left: 30px;
+        bottom: 225px;
+        
+    }
+    .content h1{
+        font-size: 3rem;
+    }
+    .content p{
+        font-size: 13px;
+    }
+    
+    .menu ul{
+        display: none;
+        position: absolute;
+        top: 0;
+        right: 0;
+        width: 70%;
+        background-color: rgba(146, 149, 157, 0.737);
+        flex-direction: column;
+        padding: 20px 10px 20px 10px;
+        height: 100vh;
+        z-index: 300;
+       
+       
+
+    }
+    .menu ul li{
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        margin: 0;
+        border-bottom: 1px solid white;
+        
+
+    }
+    .menu ul li:last-child{
+        background-color: transparent;
+        border: none;
+        border-bottom: 1px solid white;
+        border-radius: 0;
+        margin: 0;
+    }
+
+    .menu ul li:active{
+        transform: translate(0, 0);
+        opacity: 1;
+        background-color: transparent;
+    }
+    .menu ul li:last-child:active{
+        
+        opacity: 1;
+        background-color: transparent;
+    }
+
+    .menu ul{
+        display: none;
+        position: absolute;
+        top: 0;
+        right: 0;
+        width: 65%;
+        background-color: rgba(146, 149, 157, 0.943);
+        flex-direction: column;
+        padding: 20px 10px 20px 10px;
+        height: 100vh;
+        z-index: 300;
+       
+       
+
+    }
+    .menu ul li{
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        margin: 0;
+        border-bottom: 1px solid white;
+        
+
+    }
+    .menu ul li:first-child{
+        margin: 20px 0 0 0;
+    }
+    .menu ul li:last-child{
+        background-color: transparent;
+        border: none;
+        border-bottom: 1px solid white;
+        border-radius: 0;
+        margin: 0;
+    }
+
+    .menu ul li:active{
+        transform: translate(0, 0);
+        opacity: 1;
+        background-color: transparent;
+    }
+    .menu ul li:last-child:active{
+        
+        opacity: 1;
+        background-color: transparent;
+    }
+
+   
+    
+    .menu svg {
+        display: block;
+        position: absolute; 
+        top: 10px; 
+        right: 10px;
+        width: 30px; 
+        height: 30px;
+        z-index: 1000; 
+        fill: #fff; 
+    }
+    
+    
+}
